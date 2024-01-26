@@ -1,0 +1,13 @@
+GET http://localhost:3003 HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:3003 HTTP/1.1
+content-type: application/json
+
+[
+    {"id":7,"title":"Stairway to Heaven","album":"Led Zeppelin IV","artist":"Led Zeppelin","createdAt":"2023-03-02 22:00:00","updatedAt":"2023-03-02 22:00:00"},
+    {"id":8,"title":"Glimpse of Us","album":"Smithereens","artist":"Joji","createdAt":"2023-03-02 22:00:00","updatedAt":"2023-03-02 22:00:00"},
+    {"id":9,"title":"Vegas","album":"From Movie ELVIS","artist":"Doja Cat","createdAt":"2023-03-02 22:00:00","updatedAt":"2023-03-02 22:00:00"}
+]
