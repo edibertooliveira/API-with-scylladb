@@ -19,17 +19,17 @@ const fastify = Fastify({
   logger: true,
 });
 
-function handleSongs({ db, utils }) {
+function handleSongs({ db, _utils }) {
   const songsRepo = new SongRepository(db);
 
   return {
-    async add(request, reply) {
+    async add(request, _reply) {
       const payload = request.body;
       const result = await songsRepo.insertMany(payload);
 
       return result;
     },
-    async getAll(request, reply) {
+    async getAll(request, _reply) {
       const result = await songsRepo.getMany();
 
       return result;
